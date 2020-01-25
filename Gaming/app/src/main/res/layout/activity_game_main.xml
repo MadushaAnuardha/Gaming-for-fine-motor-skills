@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameMainActivity"
+    android:background="@drawable/background_line">
+
+
+    //Mask
+    <ImageView
+        android:id="@+id/mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/game_menu_mask"/>
+
+    //Background
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background_md"
+        android:visibility="visible" />
+
+    //Choose a game
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/choose_a_game"
+        android:visibility="visible" />
+
+    //Tapping Image
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/tapping_img"
+        android:visibility="visible" />
+
+    //Drag and Drop Image
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/drag_and_drop_img"
+        android:visibility="visible" />
+
+    //Trace the Path Image
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:src="@drawable/trace_the_path_img"/>
+    //Drag and drop button
+    <ImageView
+        android:id="@+id/dragAndDropBtn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/drag_and_drop"/>
+
+    //Trace the path
+    <ImageView
+        android:id="@+id/traceThePathBtn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/trace_the_path"/>
+
+    //Tapping
+    <ImageView
+        android:id="@+id/dexterityBtn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/tapping"/>
+
+    //Results
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/result_icon"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameTraceThePath"
+    android:background="@drawable/background_game">
+
+    <ImageView
+        android:id="@+id/bg_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ttp_btn_mask"/>
+
+    //Background
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/trace_bg"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/next_btn"
+        android:layout_width="151dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/next_btn"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bottom"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/left"
+        app:layout_constraintVertical_bias="0.005" />
+
+    <ImageView
+        android:id="@+id/level_img1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+
+
+    <com.mobiledexterous.gaming.GamePaintColor
+        android:id="@+id/drawingPad_v"
+        android:layout_width="480dp"
+        android:layout_height="300dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/right"
+        app:layout_constraintEnd_toStartOf="@+id/bottom"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="@+id/top"
+        app:layout_constraintTop_toTopOf="@+id/left"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/reset_btn"
+        android:layout_width="50dp"
+        android:layout_height="49dp"
+        android:background="@drawable/reset_img"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.802"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <ImageView
+        android:id="@+id/try_again"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/try_again"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/help"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/help_ttp"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="0dp"
+        app:layout_constraintGuide_percent="0.01" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="1170dp"
+        app:layout_constraintGuide_percent="0.99" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="0dp"
+        app:layout_constraintGuide_percent="0.01" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="480dp"
+        app:layout_constraintGuide_percent="0.99" />
+
+</android.support.constraint.ConstraintLayout>

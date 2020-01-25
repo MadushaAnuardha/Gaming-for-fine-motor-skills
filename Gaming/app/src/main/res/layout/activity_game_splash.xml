@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameSplash"
+    android:background="@drawable/white_bg">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/game_splash_bg" />
+
+    <ImageView
+        android:id="@+id/txt_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/game_splash_t1" />
+
+    <ImageView
+        android:id="@+id/txt_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/game_splash_t2" />
+
+    <ImageView
+        android:id="@+id/txt_3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/game_splash_t3" />
+
+    <ImageView
+        android:id="@+id/txt_4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/game_splash_t4" />
+
+    <ImageView
+        android:id="@+id/loading_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/game_splash_l1" />
+
+    <ImageView
+        android:id="@+id/loading_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:src="@drawable/game_splash_l2" />
+
+
+
+</android.support.constraint.ConstraintLayout>

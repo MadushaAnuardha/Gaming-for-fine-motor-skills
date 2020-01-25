@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mobiledexterous.gaming">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_rounded"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/icon_rounded"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".GameGraphView"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".GameTappingHard"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".GameTappingNormal"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".GameTappingEasy"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".GameDragAndDropHard"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".GameTraceThePath"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".GameDragAndDropEasy"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ResearchHome" />
+        <activity
+            android:name=".LogIn">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GameLevel"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".GameMainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".GameDifficulty"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".GameMode"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape" />
+    </application>
+
+</manifest>

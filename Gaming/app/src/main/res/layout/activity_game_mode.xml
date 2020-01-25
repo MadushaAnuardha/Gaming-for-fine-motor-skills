@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameMode"
+    android:background="@drawable/background_line">
+
+    //Mask
+    <ImageView
+        android:id="@+id/mask_game_mode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/game_mode_mask"/>
+
+    //Background
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background_md"/>
+
+    //Choose mode
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/select_game_mode"/>
+
+</android.support.constraint.ConstraintLayout>
